@@ -11,7 +11,7 @@ public class Employee extends BaseModel
 	private String _lastName;
 	private String _email;
 	private String _phone;
-	private boolean _isCompetent;
+	private boolean _isPreferred;
 	private boolean _isActive = true;	
 	//endregion
 	
@@ -19,7 +19,7 @@ public class Employee extends BaseModel
 	public Employee() { super(false); }
 	
 	public Employee(Guid empPk, Guid titleFk, String firstName, String lastName, String email, String phone,
-			boolean isCompetent, boolean isActive, boolean isFromDatabase) {
+			boolean isPreferred, boolean isActive, boolean isFromDatabase) {
 		super(isFromDatabase);
 		_empPk = empPk;
 		_titleFk = titleFk;
@@ -27,7 +27,7 @@ public class Employee extends BaseModel
 		_lastName = lastName;
 		_email = email;
 		_phone = phone;
-		_isCompetent = isCompetent;
+		_isPreferred = isPreferred;
 		_isActive = isActive;
 	}
 	//endregion
@@ -77,11 +77,11 @@ public class Employee extends BaseModel
 		_phone = phone;
 		setIsChanged(true);
 	}
-	public boolean getIsCompetent() {
-		return _isCompetent;
+	public boolean getIsPreferred() {
+		return _isPreferred;
 	}
-	public void setIsCompetent(boolean isCompetent) {
-		_isCompetent = isCompetent;
+	public void setIsPreferred(boolean isPreferred) {
+		_isPreferred = isPreferred;
 		setIsChanged(true);
 	}
 	public boolean getIsActive() {
