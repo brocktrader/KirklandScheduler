@@ -2,7 +2,6 @@ package com.KirklandScheduler.Wrappers;
 
 import com.KirklandScheduler.DataRepositories.EmployeeRepository;
 import com.KirklandScheduler.Models.Authentication;
-import com.KirklandScheduler.Models.Employee;
 
 public class AuthenticationWrapper extends Authentication {
 

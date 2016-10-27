@@ -1,12 +1,10 @@
 package com.KirklandScheduler.DataRepositories;
 
-import com.KirklandScheduler.Utilities.Guid;
-import com.KirklandScheduler.Wrappers.AvailabilityWrapper;
-
 import java.util.Date;
 import java.util.List;
 
-import com.KirklandScheduler.Models.Availability;
+import com.KirklandScheduler.Utilities.Guid;
+import com.KirklandScheduler.Wrappers.AvailabilityWrapper;
 
 public class AvailabilityRepository implements IRepository {
 

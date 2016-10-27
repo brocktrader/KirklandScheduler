@@ -5,6 +5,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/Models"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/Utilities"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/DataRepositories"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Controllers"/>
         <property name="context-root" value="KirklandScheduler"/>
         <property name="java-output-path" value="/KirklandScheduler/build/classes"/>
     </wb-module>

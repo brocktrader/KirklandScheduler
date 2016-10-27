@@ -2,7 +2,6 @@ package com.KirklandScheduler.DataRepositories;
 
 import com.KirklandScheduler.Utilities.Guid;
 import com.KirklandScheduler.Wrappers.EmployeeHoursWrapper;
-import com.KirklandScheduler.Models.EmployeeHours;
 
 public class EmployeeHoursRepository implements IRepository {
 

@@ -2,9 +2,7 @@ package com.KirklandScheduler.Wrappers;
 
 import com.KirklandScheduler.DataRepositories.CallRepository;
 import com.KirklandScheduler.DataRepositories.TitleRepository;
-import com.KirklandScheduler.Models.Call;
 import com.KirklandScheduler.Models.CallTitleCount;
-import com.KirklandScheduler.Models.Title;
 
 public class CallTitleCountWrapper extends CallTitleCount {
 

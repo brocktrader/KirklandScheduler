@@ -2,94 +2,122 @@ package com.KirklandScheduler.Models;
 
 import com.KirklandScheduler.Utilities.Guid;
 
-public class Employee extends BaseModel 
-{	
-	//region Variables
-	private Guid _empPk;
-	private Guid _titleFk;
-	private String _firstName;
-	private String _lastName;
+public class Employee extends BaseModel {
+	// region Variables
 	private String _email;
-	private String _phone;
+	private String _employeeId;
+	private Guid _empPk;
+	private String _firstName;
+	private boolean _isActive = true;
 	private boolean _isPreferred;
-	private boolean _isActive = true;	
-	//endregion
-	
-	//region Constructors
-	public Employee() { super(false); }
-	
-	public Employee(Guid empPk, Guid titleFk, String firstName, String lastName, String email, String phone,
-			boolean isPreferred, boolean isActive, boolean isFromDatabase) {
+	private String _lastName;
+	private String _phone;
+	private Guid _titleFk;
+	// endregion
+
+	// region Constructors
+	public Employee() {
+		super(false);
+	}
+
+	public Employee(Guid empPk, Guid titleFk, String employeeId, String firstName, String lastName, String email,
+			String phone, boolean isPreferred, boolean isActive, boolean isFromDatabase) {
 		super(isFromDatabase);
-		_empPk = empPk;
-		_titleFk = titleFk;
-		_firstName = firstName;
-		_lastName = lastName;
-		_email = email;
-		_phone = phone;
-		_isPreferred = isPreferred;
-		_isActive = isActive;
+		this._empPk = empPk;
+		this._titleFk = titleFk;
+		this._employeeId = employeeId;
+		this._firstName = firstName;
+		this._lastName = lastName;
+		this._email = email;
+		this._phone = phone;
+		this._isPreferred = isPreferred;
+		this._isActive = isActive;
 	}
-	//endregion
-	
-	//region Methods
-	public Guid getEmpPk() {
-		return _empPk;
-	}
-	public void setEmpPk(Guid empPk) {
-		_empPk = empPk;
-		
-		setIsChanged(true);
-		setIsFromDatabase(false);		
-	}
-	public Guid getTitleFk() {
-		return _titleFk;
-	}
-	public void setTitleFk(Guid titleFk) {
-		_titleFk = titleFk;
-		setIsChanged(true);		
-	}
-	public String getFirstName() {
-		return _firstName;
-	}
-	public void setFirstName(String firstName) {
-		_firstName = firstName;
-		setIsChanged(true);		
-	}
-	public String getLastName() {
-		return _lastName;
-	}
-	public void setLastName(String lastName) {
-		_lastName = lastName;
-		setIsChanged(true);		
-	}
+	// endregion
+
 	public String getEmail() {
-		return _email;
+		return this._email;
 	}
-	public void setEmail(String email) {
-		_email = email;
-		setIsChanged(true);
+
+	public String getEmployeeId() {
+		return this._employeeId;
 	}
-	public String getPhone() {
-		return _phone;
+
+	// region Methods
+	public Guid getEmpPk() {
+		return this._empPk;
 	}
-	public void setPhone(String phone) {
-		_phone = phone;
-		setIsChanged(true);
+
+	public String getFirstName() {
+		return this._firstName;
 	}
-	public boolean getIsPreferred() {
-		return _isPreferred;
-	}
-	public void setIsPreferred(boolean isPreferred) {
-		_isPreferred = isPreferred;
-		setIsChanged(true);
-	}
+
 	public boolean getIsActive() {
-		return _isActive;
+		return this._isActive;
 	}
+
+	public boolean getIsPreferred() {
+		return this._isPreferred;
+	}
+
+	public String getLastName() {
+		return this._lastName;
+	}
+
+	public String getPhone() {
+		return this._phone;
+	}
+
+	public Guid getTitleFk() {
+		return this._titleFk;
+	}
+
+	public void setEmail(String email) {
+		this._email = email;
+		this.setIsChanged(true);
+	}
+
+	public void setEmployeeId(String employeeId) {
+		this._employeeId = employeeId;
+		this.setIsChanged(true);
+	}
+
+	public void setEmpPk(Guid empPk) {
+		this._empPk = empPk;
+
+		this.setIsChanged(true);
+		this.setIsFromDatabase(false);
+	}
+
+	public void setFirstName(String firstName) {
+		this._firstName = firstName;
+		this.setIsChanged(true);
+	}
+
 	public void setIsActive(boolean isActive) {
-		_isActive = isActive;
-		setIsChanged(true);
+		this._isActive = isActive;
+		this.setIsChanged(true);
 	}
-	//endregion
+
+	public void setIsPreferred(boolean isPreferred) {
+		this._isPreferred = isPreferred;
+		this.setIsChanged(true);
+	}
+
+	public void setLastName(String lastName) {
+		this._lastName = lastName;
+		this.setIsChanged(true);
+	}
+
+	public void setPhone(String phone) {
+		this._phone = phone;
+		this.setIsChanged(true);
+	}
+
+	public void setTitleFk(Guid titleFk) {
+		this._titleFk = titleFk;
+		this.setIsChanged(true);
+	}
+
+	// endregion
 }

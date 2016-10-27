@@ -3,12 +3,8 @@ package com.KirklandScheduler.Wrappers;
 import com.KirklandScheduler.DataRepositories.CallJobCountRepository;
 import com.KirklandScheduler.DataRepositories.CallRepository;
 import com.KirklandScheduler.DataRepositories.JobRepository;
-import com.KirklandScheduler.Models.Call;
 import com.KirklandScheduler.Models.CallJobCount;
-import com.KirklandScheduler.Models.Job;
 import com.KirklandScheduler.Utilities.Guid;
-
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 public class CallJobCountWrapper extends CallJobCount {
 

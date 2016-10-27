@@ -1,13 +1,10 @@
 package com.KirklandScheduler.DataRepositories;
 
+import java.util.List;
+
 import com.KirklandScheduler.Utilities.Guid;
 import com.KirklandScheduler.Wrappers.CallLinkWrapper;
 import com.KirklandScheduler.Wrappers.CallWrapper;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import com.KirklandScheduler.Models.CallLink;
 
 public class CallLinkRepository implements IRepository {
 	

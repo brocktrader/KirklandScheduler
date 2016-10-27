@@ -2,7 +2,6 @@ package com.KirklandScheduler.DataRepositories;
 
 import com.KirklandScheduler.Utilities.Guid;
 import com.KirklandScheduler.Wrappers.CallJobCountWrapper;
-import com.KirklandScheduler.Models.CallJobCount;
 
 public class CallJobCountRepository implements IRepository {
 

@@ -2,7 +2,6 @@ package com.KirklandScheduler.Wrappers;
 
 import com.KirklandScheduler.DataRepositories.TitleRepository;
 import com.KirklandScheduler.Models.Employee;
-import com.KirklandScheduler.Models.Title;
 
 public class EmployeeWrapper extends Employee {
 

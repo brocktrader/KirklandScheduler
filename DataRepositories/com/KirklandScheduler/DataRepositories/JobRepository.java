@@ -2,7 +2,6 @@ package com.KirklandScheduler.DataRepositories;
 
 import com.KirklandScheduler.Utilities.Guid;
 import com.KirklandScheduler.Wrappers.JobWrapper;
-import com.KirklandScheduler.Models.Job;
 
 public class JobRepository implements IRepository {
 

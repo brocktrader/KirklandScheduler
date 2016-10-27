@@ -2,7 +2,6 @@ package com.KirklandScheduler.DataRepositories;
 
 import com.KirklandScheduler.Utilities.Guid;
 import com.KirklandScheduler.Wrappers.TitleWrapper;
-import com.KirklandScheduler.Models.Title;
 
 public class TitleRepository implements IRepository {
 

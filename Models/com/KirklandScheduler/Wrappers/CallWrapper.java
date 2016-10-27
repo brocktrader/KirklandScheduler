@@ -1,8 +1,7 @@
 package com.KirklandScheduler.Wrappers;
 
 import com.KirklandScheduler.DataRepositories.DreamsheetRepository;
-import com.KirklandScheduler.Models.*;
-import com.KirklandScheduler.Utilities.Guid;
+import com.KirklandScheduler.Models.Call;
 
 public class CallWrapper extends Call {
 	
